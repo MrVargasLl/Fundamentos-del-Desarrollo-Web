@@ -1,14 +1,54 @@
-/*Selectores de Elementos: Estilizando por Nombre*/
+@import url(https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Serif+Caption:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+
+/*Selectores de Elementos: Estilizando por Nombre - Cambiando el Color del Texto - Alineando el Texto*/
 
 h1 {
-    color: #333333;
+    color: #E6E6FA;
+    font-size: 50px;
+    text-align: center;
 }
+
+button {
+    color: rgb(124, 31, 31);
+            border-radius: 7px;
+            background-color:grey;
+}
+/*Fuente de respaldo genérica*/
+
+body {
+    font-family: 'PT Mono', sans-serif;
+    font-size: larger;
+    color: #E6E6FA;
+}
+
+h2 {
+    color: #E6E6FA;
+    font-size: 2em;
+    font-family:'PT Serif Caption', sans-serif ;
+}
+
+
+/*selector universal - Añadiendo Fondo de Color*/
+    * {
+    background-color: rgb(86, 67, 211);
+    }
 
 /*Selectores de Clase: Estilizando por Grupo*/
 
 .mi-clase {
 
-    background-color: rgb(125, 150, 125);
+color: #E6E6FA;
+font-size: 100%;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: justify;
+padding: 10px;
+border: Thistle;
+/*----------------------------------- box-sizing en CSS----------*/
+width: 960px; /* box-sizing en CSS a partir de aqui*/
+height: 134px;
+box-sizing: border-box; /* box-sizing termina aca*/
+/*-----------------------------------box-sizing en CSS----------*/
 
 }
 
@@ -29,7 +69,7 @@ y rellenos de cada elemento de tu página al asignarles un valor 0.*/
 
 /*Selectores de atributo*/
 
-a[href="https://google.com"] {
+a[href="https://www.bing.com/ck/a?!&&p=bb0ccf2fea32399d42391e01624c95938df532680f1dd6eb7eb5ce381880de6bJmltdHM9MTc1ODQxMjgwMA&ptn=3&ver=2&hsh=4&fclid=0c31a4bc-61af-6cb8-355b-b2e860086d3f&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9ZWxwcmluY2lwaXRvJm1pZD0zOTZEMzFCNDg5ODY1OTFCNjVBODM5NkQzMUI0ODk4NjU5MUI2NUE4JkZPUk09VklSRQ"] {
 
     /* reglas */
     color: orange;
@@ -40,16 +80,9 @@ a[href="https://google.com"] {
 /*Las pseudoclases*/
 
 button:hover {
-    background-color: rgb(144, 0, 255);
-    color: white;
-}
-
-/*Pseudoelementos*/
-
-p::first-line {
-    font-weight: bold;
-    color: navy;
-    text-transform: uppercase;
+    background-color: rgb(188, 182, 182);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /*Combinaciones*/
@@ -72,4 +105,5 @@ article>p {
     font-weight: bold;
     border: 2px solid rgb(113, 0, 128);
 }
+
 
