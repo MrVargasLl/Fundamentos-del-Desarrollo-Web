@@ -1,0 +1,75 @@
+/*Selectores de Elementos: Estilizando por Nombre*/
+
+h1 {
+    color: #333333;
+}
+
+/*Selectores de Clase: Estilizando por Grupo*/
+
+.mi-clase {
+
+    background-color: rgb(125, 150, 125);
+
+}
+
+/*Selectores de ID: Estilizando de Forma Única*/
+#mi-id {
+
+    font-size: 24px;
+
+}
+
+/*Selectores Universales: ¡Estiliza Todo!,  eliminar todos los márgenes 
+y rellenos de cada elemento de tu página al asignarles un valor 0.*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Selectores de atributo*/
+
+a[href="https://google.com"] {
+
+    /* reglas */
+    color: orange;
+    text-decoration: underline dotted;
+
+}
+
+/*Las pseudoclases*/
+
+button:hover {
+    background-color: rgb(144, 0, 255);
+    color: white;
+}
+
+/*Pseudoelementos*/
+
+p::first-line {
+    font-weight: bold;
+    color: navy;
+    text-transform: uppercase;
+}
+
+/*Combinaciones*/
+
+article>p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/*Displays es como una instrucción que le dice al navegador cómo debe comportarse cada elemento en tu página. */
+
+.caja {
+    display: inline-block;
+    /* Se comporta como un inline, pero admite width y height */
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(147, 179, 190);
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid rgb(113, 0, 128);
+}
+
