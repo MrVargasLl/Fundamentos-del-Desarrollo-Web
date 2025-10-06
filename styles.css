@@ -196,3 +196,100 @@ article>p {
     width: 80px;
     font-size: 30px;
 }
+
+.espaciador_1{
+background-color: white;   
+}
+
+footer {
+    color:#9f9f9f;
+    margin:300px 0px 0px 0px;
+    
+    
+}
+
+.superior {
+    
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.superior article ul li {
+    
+    margin: 15px;
+    /*color: red;*/
+
+
+}
+
+.inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.imagenes_inferior {
+    display: flex;
+    justify-content: center;
+}
+
+.inferior div img { 
+    margin: 25px;
+    width: 4%;
+    height:auto;
+
+
+}
+
+
+
+.inferior div ul {
+    display: flex;
+    
+
+}
+
+.inferior div ul li {
+    display: flex;
+    margin: 15px
+
+}
+
+.links {
+    list-style-type: none;
+/*color: red;*//*prueba de color para validar que funciona mi selector*/  
+}
+
+
+h3 {
+    /*display: block;*/
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: rgb(223, 214, 214);
+}
+
+.sticky-header {
+position: sticky;
+
+    top: 0;
+
+    background-color: rgb(210, 87, 87);
+
+    color: white;
+
+    padding: 10px;
+
+    text-align: center;
+
+    z-index: 1000;
+
+    font-weight: bold;
+
+}
