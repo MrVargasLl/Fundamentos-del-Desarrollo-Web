@@ -307,30 +307,27 @@ nav a:hover {
 }
 
 .box1 {
-
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 0px;
+    left: 0px;
     width: 150px;
     height: 150px;
-    background-color: red;
-
-    z-index: 1;
-    /* Esta caja se muestra por encima */
-
+     border-radius: 10px;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .box2 {
 
     position: absolute;
-    top: 175px;
-    left: 175px;
+    top: 100px;
+    left: 100px;
     width: 150px;
-    height: 150px;
-    background-color: blue;
-
-  z-index: 0; /* Esta caja se muestra por debajo */
-
+    height: 150px;    
+  border-radius: 10px;
+  object-fit: cover;
+  z-index: 2;
+  opacity: 0.95;
 }
 
 
@@ -351,4 +348,33 @@ position: sticky;
 
     font-weight: bold;
 
+}
+
+
+ .card-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px; /* espacio entre imágenes y texto */
+  padding: 30px;
+  max-width: 800px; /* ancho máximo para centrar */
+  margin: 40px auto; /* centra horizontalmente */
+  border-radius: 12px;
+}
+
+.contenedor-imagenes {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0; /* evita que se comprima */
+}
+
+.contenedor-texto {
+  flex: 1;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  width: 220px;
+  height: 220px;
 }
