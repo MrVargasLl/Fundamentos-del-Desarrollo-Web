@@ -118,13 +118,14 @@ article>p {
     font-size: 20px;
     width: 150px;
     height: 50px;
-    background-color: rgb(147, 179, 190);
+    background-color: black;
     text-align: center;
     font-weight: bold;
     border: 2px solid rgb(113, 0, 128);
 }
 
 /*Inicio de parte nueva con reto*/
+
 
 .espaciador {
     margin:80px 0px 0px 0px;
@@ -197,9 +198,7 @@ article>p {
     font-size: 30px;
 }
 
-.espaciador_1{
-background-color: white;   
-}
+
 
 footer {
     color:#9f9f9f;
@@ -243,8 +242,6 @@ footer {
 
 }
 
-
-
 .inferior div ul {
     display: flex;
     
@@ -274,6 +271,68 @@ h3 {
     unicode-bidi: isolate;
     color: rgb(223, 214, 214);
 }
+
+.navbar {
+
+  background-color: rgb(210, 87, 87); /* Un fondo oscuro */
+
+  display: flex; /* Alinea los elementos en una fila */
+
+  justify-content: space-around; /* Espacia uniformemente los elementos */
+
+    
+    padding: 1em;
+
+}
+
+.navbar a {
+    color: white;
+    background-color:rgb(210, 87, 87);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #333333;
+}
+
+.espaciador1 {
+    margin:155px 0px 0px 0px;
+    position: relative;
+    background-color: #161616;
+    width: 300px;
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+
+.box1 {
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+
+    z-index: 1;
+    /* Esta caja se muestra por encima */
+
+}
+
+.box2 {
+
+    position: absolute;
+    top: 175px;
+    left: 175px;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+
+  z-index: 0; /* Esta caja se muestra por debajo */
+
+}
+
 
 .sticky-header {
 position: sticky;
