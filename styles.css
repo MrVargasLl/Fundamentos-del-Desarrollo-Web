@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Serif+Caption:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
 
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;        /* mata el scroll horizontal fantasma */
+  background: var(--grey-900);
+}
+
+
 /*------------------------prueba------------------------*/
 :root {
     --green: hsl(75, 94%, 57%);
@@ -63,9 +73,9 @@ text-align: justify;
 padding: 10px;
 border: Thistle;
 /*----------------------------------- box-sizing en CSS----------*/
-width: 960px; /* box-sizing en CSS a partir de aqui*/
-height: 134px;
-box-sizing: border-box; /* box-sizing termina aca*/
+/*width: 960px; /* box-sizing en CSS a partir de aqui*/
+/*height: 134px;
+/*box-sizing: border-box; /* box-sizing termina aca*/
 /*-----------------------------------box-sizing en CSS----------*/
 
 }
@@ -139,6 +149,7 @@ article>p {
 
 .card_title {
     text-align: center;
+    display: flex;
 }
 
 .title {
@@ -160,6 +171,8 @@ article>p {
     width: 80px;
     height: auto;
     border-radius: 999px;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -202,7 +215,7 @@ article>p {
 
 footer {
     color:#9f9f9f;
-    margin:300px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
     
     
 }
@@ -256,7 +269,8 @@ footer {
 
 .links {
     list-style-type: none;
-/*color: red;*//*prueba de color para validar que funciona mi selector*/  
+    /*color: red;*/
+    /*prueba de color para validar que funciona mi selector*/
 }
 
 
@@ -274,20 +288,23 @@ h3 {
 
 .navbar {
 
-  background-color: rgb(210, 87, 87); /* Un fondo oscuro */
+    background-color: rgb(210, 87, 87);
+    /* Un fondo oscuro */
 
-  display: flex; /* Alinea los elementos en una fila */
+    display: flex;
+    /* Alinea los elementos en una fila */
 
-  justify-content: space-around; /* Espacia uniformemente los elementos */
+    justify-content: space-around;
+    /* Espacia uniformemente los elementos */
 
-    
+
     padding: 1em;
 
 }
 
 .navbar a {
     color: white;
-    background-color:rgb(210, 87, 87);
+    background-color: rgb(210, 87, 87);
     text-decoration: none;
     font-weight: bold;
 }
@@ -297,7 +314,7 @@ nav a:hover {
 }
 
 .espaciador1 {
-    margin:155px 0px 0px 0px;
+    margin: 155px 0px 0px 0px;
     position: relative;
     background-color: #161616;
     width: 300px;
@@ -312,9 +329,9 @@ nav a:hover {
     left: 0px;
     width: 150px;
     height: 150px;
-     border-radius: 10px;
-  object-fit: cover;
-  z-index: 1;
+    border-radius: 10px;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .box2 {
@@ -323,16 +340,16 @@ nav a:hover {
     top: 100px;
     left: 100px;
     width: 150px;
-    height: 150px;    
-  border-radius: 10px;
-  object-fit: cover;
-  z-index: 2;
-  opacity: 0.95;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    z-index: 2;
+    opacity: 0.95;
 }
 
 
 .sticky-header {
-position: sticky;
+    position: sticky;
 
     top: 0;
 
@@ -351,30 +368,88 @@ position: sticky;
 }
 
 
- .card-horizontal {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 40px; /* espacio entre imágenes y texto */
-  padding: 30px;
-  max-width: 800px; /* ancho máximo para centrar */
-  margin: 40px auto; /* centra horizontalmente */
-  border-radius: 12px;
+.card-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    /* espacio entre imágenes y texto */
+    padding: 30px;
+    max-width: 800px;
+    /* ancho máximo para centrar */
+    margin: 40px auto;
+    /* centra horizontalmente */
+    border-radius: 12px;
 }
 
 .contenedor-imagenes {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  flex-shrink: 0; /* evita que se comprima */
+    position: relative;
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    /* evita que se comprima */
 }
 
 .contenedor-texto {
-  flex: 1;
-  color: white;
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: left;
-  width: 220px;
-  height: 220px;
+    flex: 1;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    width: 220px;
+    height: 220px;
 }
+
+/*---------------- Media Queries ----------------*/
+@media (max-width: 768px) {
+    
+    .card-horizontal {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contenedor-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .espaciador, .espaciador1 {
+        padding: 15px;
+    }
+
+    .contact_btn {
+        bottom: -20px;
+        right: -20px;
+    }
+
+    .superior { 
+    flex-direction: column;
+    text-align: center;
+}
+
+   
+.superior article ul { 
+    flex-direction: column;
+    align-items: center;
+}
+
+.inferior div ul {
+    display: none;
+}
+
+.contact_btn {
+    display: none;
+}
+
+
+
+
+}
+
